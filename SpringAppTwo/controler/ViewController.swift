@@ -20,9 +20,9 @@ final class ViewController: UIViewController {
     
     @IBOutlet var settingBButton: UIButton!
 
-    // MARK: - variables and constants
+    // MARK: - variables
     private var counter = 0
-    private let animations = Animation.getAnimation()
+    private var animations = Animation.getAnimation()
     
     // MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -38,13 +38,13 @@ final class ViewController: UIViewController {
         setupAnimation()
         
         settingBButton.setTitle("Run \(animations[counter].presen)", for: .normal)
-        print(counter)
     }
     
     // MARK: - private func
     private func setupAnimation() {
         if (counter + 1) == animations.count {
             counter = 0
+            animations.shuffle()
         }
         
         let animation = animations[counter]

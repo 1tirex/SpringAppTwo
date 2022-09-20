@@ -41,6 +41,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512E9BFB28DA550F00640988 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				516A21E428DA196E00507BEE /* AppDelegate.swift */,
+				516A21E628DA196E00507BEE /* SceneDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		512E9BFC28DA552F00640988 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				512E9BF928DA2E1E00640988 /* Model.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		512E9BFD28DA553F00640988 /* controler */ = {
+			isa = PBXGroup;
+			children = (
+				516A21E828DA196E00507BEE /* ViewController.swift */,
+			);
+			path = controler;
+			sourceTree = "<group>";
+		};
+		512E9BFE28DA554D00640988 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				516A21EA28DA196E00507BEE /* Main.storyboard */,
+				516A21EF28DA197100507BEE /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		512E9BFF28DA555E00640988 /* resourses */ = {
+			isa = PBXGroup;
+			children = (
+				516A21ED28DA197100507BEE /* Assets.xcassets */,
+			);
+			path = resourses;
+			sourceTree = "<group>";
+		};
 		516A21D828DA196E00507BEE = {
 			isa = PBXGroup;
 			children = (
@@ -60,14 +102,12 @@
 		516A21E328DA196E00507BEE /* SpringAppTwo */ = {
 			isa = PBXGroup;
 			children = (
-				516A21E428DA196E00507BEE /* AppDelegate.swift */,
-				516A21E628DA196E00507BEE /* SceneDelegate.swift */,
-				512E9BF928DA2E1E00640988 /* Model.swift */,
-				516A21E828DA196E00507BEE /* ViewController.swift */,
-				516A21EA28DA196E00507BEE /* Main.storyboard */,
-				516A21ED28DA197100507BEE /* Assets.xcassets */,
-				516A21EF28DA197100507BEE /* LaunchScreen.storyboard */,
 				516A21F228DA197100507BEE /* Info.plist */,
+				512E9BFB28DA550F00640988 /* app */,
+				512E9BFC28DA552F00640988 /* model */,
+				512E9BFD28DA553F00640988 /* controler */,
+				512E9BFE28DA554D00640988 /* storyboards */,
+				512E9BFF28DA555E00640988 /* resourses */,
 			);
 			path = SpringAppTwo;
 			sourceTree = "<group>";

@@ -13,7 +13,6 @@ struct Animation {
     let force: CGFloat
     let duration: CGFloat
     let delay: CGFloat
-    
 }
 
 extension Animation {
