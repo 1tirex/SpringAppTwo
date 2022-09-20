@@ -23,10 +23,15 @@ extension Animation {
         let presets = AnimationPreset.allCases.shuffled()
         let curves = AnimationCurve.allCases.shuffled()
         
-        for (preset, curve) in zip(presets, curves) {
+        let min = min(
+            presets.count,
+            curves.count
+        )
+        
+        for index in 0..<min {
             let animation = Animation(
-                presen: preset.rawValue,
-                curve: curve.rawValue,
+                presen: presets[index].rawValue,
+                curve: curves[index].rawValue,
                 force: Double.random(in: 1...2),
                 duration: Double.random(in: 0...1),
                 delay: Double.random(in: 0...1)

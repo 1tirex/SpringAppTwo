@@ -8,8 +8,8 @@
 import UIKit
 import SpringAnimation
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    // MARK: - outlets
     @IBOutlet var springView: SpringView!
     
     @IBOutlet var presenLabel: UILabel!
@@ -19,24 +19,29 @@ class ViewController: UIViewController {
     @IBOutlet var delayLabel: UILabel!
     
     @IBOutlet var settingBButton: UIButton!
-    
+
+    // MARK: - variables and constants
     private var counter = 0
     private let animations = Animation.getAnimation()
     
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupLabels(animations[0])
-        setupView(animations[0])
+        setupLabels(animations.first ?? animations[0])
+        setupView(animations.first ?? animations[0])
         
         springView.layer.cornerRadius = 10
     }
 
+    // MARK: - action
     @IBAction func changeButton(_ sender: UIButton) {
         setupAnimation()
         
         settingBButton.setTitle("Run \(animations[counter].presen)", for: .normal)
+        print(animations.count)
     }
     
+    // MARK: - private func
     private func setupAnimation() {
         if counter == animations.count {
             counter = 0
