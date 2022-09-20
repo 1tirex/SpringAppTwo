@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		512E9BF828DA1C2B00640988 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 512E9BF728DA1C2B00640988 /* SpringAnimation */; };
+		512E9BFA28DA2E1E00640988 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512E9BF928DA2E1E00640988 /* Model.swift */; };
 		516A21E528DA196E00507BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516A21E428DA196E00507BEE /* AppDelegate.swift */; };
 		516A21E728DA196E00507BEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516A21E628DA196E00507BEE /* SceneDelegate.swift */; };
 		516A21E928DA196E00507BEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516A21E828DA196E00507BEE /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		512E9BF928DA2E1E00640988 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		516A21E128DA196E00507BEE /* SpringAppTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAppTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516A21E428DA196E00507BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		516A21E628DA196E00507BEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512E9BF828DA1C2B00640988 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 			children = (
 				516A21E428DA196E00507BEE /* AppDelegate.swift */,
 				516A21E628DA196E00507BEE /* SceneDelegate.swift */,
+				512E9BF928DA2E1E00640988 /* Model.swift */,
 				516A21E828DA196E00507BEE /* ViewController.swift */,
 				516A21EA28DA196E00507BEE /* Main.storyboard */,
 				516A21ED28DA197100507BEE /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SpringAppTwo;
+			packageProductDependencies = (
+				512E9BF728DA1C2B00640988 /* SpringAnimation */,
+			);
 			productName = SpringAppTwo;
 			productReference = 516A21E128DA196E00507BEE /* SpringAppTwo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 516A21D828DA196E00507BEE;
+			packageReferences = (
+				512E9BF628DA1C2B00640988 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 516A21E228DA196E00507BEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 				516A21E928DA196E00507BEE /* ViewController.swift in Sources */,
 				516A21E528DA196E00507BEE /* AppDelegate.swift in Sources */,
 				516A21E728DA196E00507BEE /* SceneDelegate.swift in Sources */,
+				512E9BFA28DA2E1E00640988 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		512E9BF628DA1C2B00640988 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		512E9BF728DA1C2B00640988 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 512E9BF628DA1C2B00640988 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 516A21D928DA196E00507BEE /* Project object */;
 }
