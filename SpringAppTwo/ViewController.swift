@@ -38,12 +38,12 @@ final class ViewController: UIViewController {
         setupAnimation()
         
         settingBButton.setTitle("Run \(animations[counter].presen)", for: .normal)
-        print(animations.count)
+        print(counter)
     }
     
     // MARK: - private func
     private func setupAnimation() {
-        if counter == animations.count {
+        if (counter + 1) == animations.count {
             counter = 0
         }
         
