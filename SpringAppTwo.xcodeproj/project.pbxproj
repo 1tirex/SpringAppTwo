@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5117EA1428EEEF7D00D4B4EB /* DataStor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117EA1328EEEF7D00D4B4EB /* DataStor.swift */; };
 		512E9BF828DA1C2B00640988 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 512E9BF728DA1C2B00640988 /* SpringAnimation */; };
 		512E9BFA28DA2E1E00640988 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512E9BF928DA2E1E00640988 /* Model.swift */; };
 		516A21E528DA196E00507BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516A21E428DA196E00507BEE /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5117EA1328EEEF7D00D4B4EB /* DataStor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStor.swift; sourceTree = "<group>"; };
 		512E9BF928DA2E1E00640988 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		516A21E128DA196E00507BEE /* SpringAppTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAppTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516A21E428DA196E00507BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5117EA1228EEEF1300D4B4EB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5117EA1328EEEF7D00D4B4EB /* DataStor.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		512E9BFB28DA550F00640988 /* app */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +113,12 @@
 			isa = PBXGroup;
 			children = (
 				516A21F228DA197100507BEE /* Info.plist */,
-				512E9BFB28DA550F00640988 /* app */,
+				5117EA1228EEEF1300D4B4EB /* Data */,
 				512E9BFC28DA552F00640988 /* model */,
 				512E9BFD28DA553F00640988 /* controler */,
 				512E9BFE28DA554D00640988 /* storyboards */,
 				512E9BFF28DA555E00640988 /* resourses */,
+				512E9BFB28DA550F00640988 /* app */,
 			);
 			path = SpringAppTwo;
 			sourceTree = "<group>";
@@ -190,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				516A21E928DA196E00507BEE /* ViewController.swift in Sources */,
+				5117EA1428EEEF7D00D4B4EB /* DataStor.swift in Sources */,
 				516A21E528DA196E00507BEE /* AppDelegate.swift in Sources */,
 				516A21E728DA196E00507BEE /* SceneDelegate.swift in Sources */,
 				512E9BFA28DA2E1E00640988 /* Model.swift in Sources */,

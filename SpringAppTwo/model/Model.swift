@@ -5,7 +5,6 @@
 //  Created by Илья on 20.09.2022.
 //
 import UIKit
-import SpringAnimation
 
 struct Animation {
     let presen: String
@@ -13,27 +12,34 @@ struct Animation {
     let force: CGFloat
     let duration: CGFloat
     let delay: CGFloat
+    
+    var descriptions: String {
+        """
+        preset: \(presen)
+        curve: \(curve)
+        force: \(String(format: "%.2f", force))
+        duration: \(String(format: "%.2f", duration))
+        delay: \(String(format: "%.2f", delay))
+        """
+    }
 }
 
 extension Animation {
     static func getAnimation() -> [Animation] {
         var animations: [Animation] = []
         
-        let presets = AnimationPreset.allCases.shuffled()
-        let curves = AnimationCurve.allCases.shuffled()
-        
         let min = min(
-            presets.count,
-            curves.count
+            DataStor.shared.presets.count,
+            DataStor.shared.curves.count
         )
         
         for index in 0..<min {
             let animation = Animation(
-                presen: presets[index].rawValue,
-                curve: curves[index].rawValue,
+                presen: DataStor.shared.presets[index].rawValue,
+                curve: DataStor.shared.curves[index].rawValue,
                 force: Double.random(in: 1...2),
-                duration: Double.random(in: 0...1),
-                delay: Double.random(in: 0...1)
+                duration: Double.random(in: 0.5...1),
+                delay: 0.3
             )
             animations.append(animation)
         }
