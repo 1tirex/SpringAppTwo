@@ -8,7 +8,6 @@
 import SpringAnimation
 
 class DataStor {
-    
     static let shared = DataStor()
     
     let presets = AnimationPreset.allCases.shuffled()
@@ -16,4 +15,3 @@ class DataStor {
     
     private init () {}
 }
-

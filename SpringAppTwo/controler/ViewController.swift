@@ -9,29 +9,33 @@ import UIKit
 import SpringAnimation
 
 final class ViewController: UIViewController {
-    // MARK: - outlets
+    
+    // MARK: - @IBOutlet
     @IBOutlet var descriptionLabel: UILabel! {
         didSet {
             descriptionLabel.text = animations.first?.descriptions
         }
     }
+    
     @IBOutlet var springView: SpringView! {
         didSet {
             springView.layer.cornerRadius = 10
         }
     }
-
+    
     // MARK: - variables
     private var counter = 0
     private var animations = Animation.getAnimation()
-
+    
     // MARK: - action
     @IBAction func changeButton(_ sender: UIButton) {
         setupAnimation()
         
         sender.setTitle("Run \(animations[counter].presen)", for: .normal)
     }
-    
+}
+
+private extension ViewController {
     // MARK: - private func
     private func setupAnimation() {
         
@@ -56,4 +60,3 @@ final class ViewController: UIViewController {
         springView.animate()
     }
 }
-
